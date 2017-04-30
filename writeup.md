@@ -116,6 +116,6 @@ Here's a [link to my video result](./project_video_output.mp4)
 
 Ans: When using same pipeline with challenge_video.mp4 , I did notice that for some scenes such as there is brake ink in the road or same shadow that seems like a lane line, my pipeline failed to get a correct lane line.
 
-### Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+###Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
 
 I think I can try using semantic segmentation (labelling pixels in a frame) as lane/not lane for further solving harder videos challenge. Or I need to find a algorithm that adjust the lane line extration range to avoid getting shadow lines out of range. 
