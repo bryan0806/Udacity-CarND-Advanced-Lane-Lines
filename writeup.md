@@ -21,7 +21,7 @@ The goals / steps of this project are the following:
 [image4]: ./output_images/warped.jpg "Warp Example"
 [image5]: ./output_images/laneline.png "Fit Visual"
 [image6]: ./output_images/result.jpg "Output"
-[video1]: ./project_video.mp4 "Video"
+[video1]: ./project_video_output.mp4 "Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 ###Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -114,5 +114,8 @@ Here's a [link to my video result](./project_video_output.mp4)
 
 ####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+Ans: When using same pipeline with challenge_video.mp4 , I did notice that for some scenes such as there is brake ink in the road or same shadow that seems like a lane line, my pipeline failed to get a correct lane line.
 
+### Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+
+I think I can try using semantic segmentation (labelling pixels in a frame) as lane/not lane for further solving harder videos challenge. Or I need to find a algorithm that adjust the lane line extration range to avoid getting shadow lines out of range. 
